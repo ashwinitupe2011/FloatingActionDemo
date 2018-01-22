@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FloatingActionDemo</string>
+    <string name="textinfo">DownLoadAZ Screen recorder app to experience this </string>
+    <string name="textIconinfo">Flaticon Icon should be enabled by default on phone restart and once the app is launch for first time.</string>
+    <string name="section_1">Section 1</string>
+    <string name="section_2">Section 2</string>
+    <string name="section_3">Section 3</string>
+    <string name="section_4">Section 4</string>
+    <string name="section_5">Section 5</string>
+</resources>

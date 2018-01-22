@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="press button"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+
+    <FrameLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="invisible"
+        >
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            app:arc_axisRadius="140dp"
+            app:arc_freeAngle="true"
+            app:arc_origin="left"
+            app:arc_radius="200dp">
+
+
+            <Button
+                style="@style/Item.Path"
+                android:text="@string/section_1"
+                android:textSize="@dimen/fab_text_size"
+                android:drawableLeft="@drawable/settings"
+                android:drawableStart="@drawable/settings"
+                android:textColor="@color/colorAccent"
+                app:arc_angle="30" />
+
+
+            <Button
+                style="@style/Item.Path"
+                android:text="@string/section_2"
+                android:textSize="@dimen/fab_text_size"
+                android:drawableLeft="@drawable/photo_camera"
+                android:drawableStart="@drawable/photo_camera"
+                android:textColor="@color/colorAccent"
+                app:arc_angle="60" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="@string/section_3"
+                android:textSize="@dimen/fab_text_size"
+                android:drawableLeft="@drawable/video_camera"
+                android:drawableStart="@drawable/video_camera"
+                android:textColor="@color/colorAccent"
+                app:arc_angle="90" />
+
+
+            <Button
+                style="@style/Item.Path"
+                android:textSize="@dimen/fab_text_size"
+                android:text="@string/section_4"
+                android:drawableLeft="@drawable/gallery"
+                android:drawableStart="@drawable/gallery"
+                android:textColor="@color/colorAccent"
+                app:arc_angle="120" />
+            <Button
+                style="@style/Item.Path"
+                android:textSize="@dimen/fab_text_size"
+                android:text="@string/section_5"
+                android:drawableLeft="@drawable/placeholder"
+                android:drawableStart="@drawable/placeholder"
+                android:textColor="@color/colorAccent"
+                app:arc_angle="150" />
+
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/path_fab"
+        android:layout_centerVertical="true"
+        android:text="+"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+
+</RelativeLayout>
